@@ -162,3 +162,23 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.artice-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.artice-pages .page-link {
+  width: auto;
+  height: 30px;
+  padding: 0 15px;
+  color: green;
+  border: 1px solid green;
+  margin: 0 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

@@ -4,7 +4,7 @@ import EmptyRecords from "../EmptyRecords";
 import Header from "../Header";
 
 const ArticleList = (props) => {
-    const { articles } = props
+    const { articles, setPage } = props
     const [orderedArticles, setOrderedArticles] = useState([])
 
     useEffect(() => {
@@ -36,6 +36,11 @@ const ArticleList = (props) => {
     }
     return (
         <>
+          <div className="artice-pages">
+                <div className="page-link" onClick={() => setPage(1)}>1 day</div>
+                <div className="page-link" onClick={() => setPage(7)}>7 days</div>
+                <div className="page-link" onClick={() => setPage(30)}>30 days</div>
+            </div>
             <Header />
             {articles?.length > 0 ?
                 <div className="article-layout-container">
@@ -50,6 +55,7 @@ const ArticleList = (props) => {
                 :
                 <EmptyRecords records="articles" />
             }
+          
         </>
     )
 }

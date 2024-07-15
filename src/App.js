@@ -7,20 +7,21 @@ import './App.css';
 
 function App() {
   const [articles, setArticles] = useState([]);
+  const [getPage, setPage] = useState(1);
 
   useEffect(() => {
     const getArticles = async () => {
-      const data = await fetchArticles();
+      const data = await fetchArticles(getPage);
       setArticles(data);
     };
 
     getArticles();
-  }, []);
+  }, [getPage]);
 
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<ArticleList articles={articles} />} />
+        <Route exact path="/" element={<ArticleList articles={articles} setPage={setPage}/>} />
         <Route path="/article/:id" element={<ArticleDetail articles={articles} />} />
       </Routes>
     </Router>
