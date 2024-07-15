@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/arvind0511/newyork-times/static/css/main.e54b0805.css",
+    "main.js": "/arvind0511/newyork-times/static/js/main.d5412d13.js",
+    "static/js/453.23514814.chunk.js": "/arvind0511/newyork-times/static/js/453.23514814.chunk.js",
+    "index.html": "/arvind0511/newyork-times/index.html",
+    "main.e54b0805.css.map": "/arvind0511/newyork-times/static/css/main.e54b0805.css.map",
+    "main.d5412d13.js.map": "/arvind0511/newyork-times/static/js/main.d5412d13.js.map",
+    "453.23514814.chunk.js.map": "/arvind0511/newyork-times/static/js/453.23514814.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e54b0805.css",
+    "static/js/main.d5412d13.js"
+  ]
+}
