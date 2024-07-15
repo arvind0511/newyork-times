@@ -11,7 +11,8 @@ const ArticleDetail = (props) => {
     if (!article) return <div>Article not found</div>;
 
     const getImage = () => {
-        return article?.media[0]?.['media-metadata'][0].url
+        let imageURL = article?.media[0]?.["media-metadata"]?.filter((data) => data.format === "mediumThreeByTwo440")[0].url || article?.media[0]?.["media-metadata"]?.filter((data) => data.format === "Standard Thumbnail")[0].url
+        return imageURL
     }
     return (
         <>
